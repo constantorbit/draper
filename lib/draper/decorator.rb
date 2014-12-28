@@ -10,8 +10,8 @@ module Draper
     # @return the object being decorated.
     attr_reader :object
     alias_method :model, :object
-    alias_method :source, :object # TODO: deprecate this
-    alias_method :to_source, :object # TODO: deprecate this
+    # alias_method :source, :object # TODO: deprecate this
+    # alias_method :to_source, :object # TODO: deprecate this
 
     # @return [Hash] extra data to be used in user-defined methods.
     attr_accessor :context

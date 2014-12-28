@@ -336,7 +336,6 @@ module Draper
 
         expect(decorator.object).to be object
         expect(decorator.model).to be object
-        expect(decorator.to_source).to be object
       end
 
       it "is aliased to #model" do
@@ -346,19 +345,6 @@ module Draper
         expect(decorator.model).to be object
       end
 
-      it "is aliased to #source" do
-        object = Model.new
-        decorator = Decorator.new(object)
-
-        expect(decorator.source).to be object
-      end
-
-      it "is aliased to #to_source" do
-        object = Model.new
-        decorator = Decorator.new(object)
-
-        expect(decorator.to_source).to be object
-      end
     end
 
     describe "aliasing object to object class name" do
